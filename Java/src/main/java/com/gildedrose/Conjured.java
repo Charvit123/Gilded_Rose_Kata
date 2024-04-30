@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class Conjured extends InventoryAction {
+public class Conjured extends Categories {
   public static final String CONJURED = "Conjured";
 
   public Conjured(Item item) {
@@ -8,7 +8,17 @@ public class Conjured extends InventoryAction {
   }
 
   @Override
-  protected void decreaseQuality() {
+  void decreaseQuality() {
     item.quality = Math.max(0, item.quality - 2);
+  }
+
+  @Override
+  void updateQuality() {
+    decreaseQuality();
+  }
+
+  @Override
+  void handleExpired() {
+    decreaseQuality();
   }
 }

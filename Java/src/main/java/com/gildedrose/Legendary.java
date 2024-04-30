@@ -1,18 +1,18 @@
 package com.gildedrose;
 
-public class Legendary extends InventoryAction {
-    public static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
+public class Legendary extends Categories {
+  public static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
 
-    public Legendary(Item item) {
+  public Legendary(Item item) {
     super(item);
   }
 
   @Override
-  protected void updateQuality() {}
+  void updateExpiration() {}
 
   @Override
-  protected void updateExpiration() {}
+  void updateQuality() {}
 
   @Override
-  protected void handleExpired() {}
+  void handleExpired() {}
 }

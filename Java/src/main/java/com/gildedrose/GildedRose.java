@@ -9,8 +9,7 @@ class GildedRose {
 
   public void updateItems() {
     for (Item item : items) {
-      InventoryAction.create(item).dailyUpdate();
+      Categories.create(item).dailyUpdate();
     }
   }
-
 }

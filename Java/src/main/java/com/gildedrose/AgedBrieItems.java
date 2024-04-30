@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class AgedBrieItems extends InventoryAction {
+public class AgedBrieItems extends Categories {
     public static final String AGED_BRIE = "Aged Brie";
 
     public AgedBrieItems(Item item) {
@@ -8,12 +8,14 @@ public class AgedBrieItems extends InventoryAction {
   }
 
     @Override
-    protected void updateQuality() {
+    void updateQuality() {
         increaseQuality();
     }
 
     @Override
-    protected void handleExpired() {
+    void handleExpired() {
         increaseQuality();
     }
+
+
 }
