@@ -1,9 +1,9 @@
 package com.gildedrose;
 
-public class BackstagePasses extends Categories {
+public class BackstagePassesItems extends ItemCategories {
     public static final String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
 
-    public BackstagePasses(Item item) {
+    public BackstagePassesItems(Item item) {
     super(item);
   }
 

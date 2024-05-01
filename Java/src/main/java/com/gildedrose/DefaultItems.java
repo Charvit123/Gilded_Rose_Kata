@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-public class DefaultItems extends Categories {
+public class DefaultItems extends ItemCategories {
   public DefaultItems(Item item) {
     super(item);
   }

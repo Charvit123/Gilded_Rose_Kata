@@ -1,9 +1,9 @@
 package com.gildedrose;
 
-public class Legendary extends Categories {
+public class LegendaryItems extends ItemCategories {
   public static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
 
-  public Legendary(Item item) {
+  public LegendaryItems(Item item) {
     super(item);
   }
 

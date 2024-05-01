@@ -1,9 +1,9 @@
 package com.gildedrose;
 
-public class Conjured extends Categories {
+public class ConjuredItems extends ItemCategories {
   public static final String CONJURED = "Conjured";
 
-  public Conjured(Item item) {
+  public ConjuredItems(Item item) {
     super(item);
   }
 
