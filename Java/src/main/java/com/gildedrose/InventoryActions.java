@@ -25,21 +25,17 @@ abstract class InventoryActions {
     }
   }
 
-  void updateQuality() {
-    decreaseQuality();
-  }
-
   void handleIfExpired() {
     if (item.sellIn < 0) {
       handleExpired();
     }
   }
 
-  void handleExpired() {
-    decreaseQuality();
-  }
-
   void updateExpiration() {
     item.sellIn = item.sellIn - 1;
   }
+
+  void updateQuality() {}
+
+  void handleExpired() {}
 }

@@ -17,7 +17,7 @@ public class Categories extends InventoryActions {
       case Conjured.CONJURED:
         return new Conjured(item);
       default:
-        return new Categories(item);
+        return new DefaultItems(item);
     }
   }
 }
